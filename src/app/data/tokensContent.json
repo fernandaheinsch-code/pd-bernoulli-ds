@@ -1,0 +1,1640 @@
+{
+  "overview": {
+    "title": "Design Tokens",
+    "description": "Tokens de design extraídos automaticamente do Figma via export.json.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Os tokens de design são a fonte da verdade para cores, tipografia e espaçamentos do Sigma UI. Eles são exportados diretamente das variáveis do Figma e inseridos na documentação via script automatizado."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Coleções disponíveis"
+      },
+      {
+        "type": "card-grid",
+        "cards": [
+          {
+            "icon": "Palette",
+            "title": "Tokens de Cor",
+            "description": "Cores dos temas Multitude, Bernoulli, Shadcn e paleta Tailwind completa."
+          },
+          {
+            "icon": "Type",
+            "title": "Tokens de Tipografia",
+            "description": "Font families, tamanhos, pesos e alturas de linha."
+          },
+          {
+            "icon": "Ruler",
+            "title": "Primitivos Tailwind",
+            "description": "Border radius, padding, gap, max-width e opacidades."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Como atualizar"
+      },
+      {
+        "type": "paragraph",
+        "text": "Os tokens são gerados pelo script `extract-tokens-docs.js` no projeto dev-fer. Para atualizar a documentação com novos valores do Figma:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "# No diretório dev-fer:\nmake figma-extract-tokens-docs"
+      },
+      {
+        "type": "alert",
+        "variant": "info",
+        "title": "Arquivo fonte",
+        "text": "O arquivo export.json deve ser exportado manualmente via Figma → Variables → Export to JSON e salvo na raiz do projeto dev-fer."
+      }
+    ]
+  },
+  "cores": {
+    "title": "Tokens de Cor",
+    "description": "Cores dos temas Multitude, Bernoulli, Shadcn e paleta Tailwind extraídas do Figma.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Cores extraídas automaticamente das coleções de marca do Figma. Cada tema possui variantes light e dark com tokens semânticos."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Multitude — Brand"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "primary",
+            "value": "#7325b8"
+          },
+          {
+            "name": "hover:primary",
+            "value": "#b674f0"
+          },
+          {
+            "name": "secondary",
+            "value": "#ab71e6"
+          },
+          {
+            "name": "hover:secondary",
+            "value": "#dab1fd"
+          },
+          {
+            "name": "ring",
+            "value": "#bb80f7"
+          },
+          {
+            "name": "tertiary",
+            "value": "#bae01b"
+          },
+          {
+            "name": "quartiary",
+            "value": "#e6cfff"
+          },
+          {
+            "name": "brand",
+            "value": "#470a7d"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Multitude — Perfis"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "student/student:primary",
+            "value": "#8f54c3"
+          },
+          {
+            "name": "student/student:secundary",
+            "value": "#e9ddf3"
+          },
+          {
+            "name": "student/student:hover",
+            "value": "#c7a9e1"
+          },
+          {
+            "name": "family/family:primary",
+            "value": "#5e22c6"
+          },
+          {
+            "name": "family/family:secundary",
+            "value": "#cbb7ee"
+          },
+          {
+            "name": "family/family:hover",
+            "value": "#b68bff"
+          },
+          {
+            "name": "teacher/teacher:primary",
+            "value": "#881697"
+          },
+          {
+            "name": "teacher/teacher:secundary",
+            "value": "#e7d0ea"
+          },
+          {
+            "name": "teacher/teacher:hover",
+            "value": "#d5addb"
+          },
+          {
+            "name": "school/school:primary",
+            "value": "#8a16c7"
+          },
+          {
+            "name": "school/school:secundary",
+            "value": "#e8d0f4"
+          },
+          {
+            "name": "school/school:hover",
+            "value": "#d9b3ed"
+          },
+          {
+            "name": "system/system:primary",
+            "value": "#ac21b6"
+          },
+          {
+            "name": "system/system:secundary",
+            "value": "#f1d3f3"
+          },
+          {
+            "name": "system/system:hover",
+            "value": "#dc90e2"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Bernoulli — Brand"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "primary",
+            "value": "#288c85"
+          },
+          {
+            "name": "hover:primary",
+            "value": "#36b3aa"
+          },
+          {
+            "name": "secondary",
+            "value": "#2a9089"
+          },
+          {
+            "name": "hover:secondary",
+            "value": "#96d4d2"
+          },
+          {
+            "name": "ring",
+            "value": "#4ec0b8"
+          },
+          {
+            "name": "tertiary",
+            "value": "#0ba28c"
+          },
+          {
+            "name": "quartiary",
+            "value": "#cff4f2"
+          },
+          {
+            "name": "brand",
+            "value": "#062291"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Bernoulli — Perfis"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "student/student:primary",
+            "value": "#9869e3"
+          },
+          {
+            "name": "student/student:secundary",
+            "value": "#d0bafb"
+          },
+          {
+            "name": "student/student:hover",
+            "value": "#c0a5f6"
+          },
+          {
+            "name": "family/family:primary",
+            "value": "#43b490"
+          },
+          {
+            "name": "family/family:secundary",
+            "value": "#b5e3d4"
+          },
+          {
+            "name": "family/family:hover",
+            "value": "#96d7bb"
+          },
+          {
+            "name": "teacher/teacher:primary",
+            "value": "#3888e7"
+          },
+          {
+            "name": "teacher/teacher:secundary",
+            "value": "#a9d3f3"
+          },
+          {
+            "name": "teacher/teacher:hover",
+            "value": "#8ac7ef"
+          },
+          {
+            "name": "school/school:primary",
+            "value": "#3844e7"
+          },
+          {
+            "name": "school/school:secundary",
+            "value": "#a9abf3"
+          },
+          {
+            "name": "school/school:hover",
+            "value": "#8a91ef"
+          },
+          {
+            "name": "system/system:primary",
+            "value": "#7b6fe0"
+          },
+          {
+            "name": "system/system:secundary",
+            "value": "#c9c1f9"
+          },
+          {
+            "name": "system/system:hover",
+            "value": "#b0a6f6"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Shadcn — Light"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "base/bg-muted-40",
+            "value": "rgba(229, 229, 229, 0.4)"
+          },
+          {
+            "name": "base/bg-muted-50",
+            "value": "rgba(229, 229, 229, 0.5)"
+          },
+          {
+            "name": "base/bg-accent-50",
+            "value": "rgba(230, 207, 255, 0.5)"
+          },
+          {
+            "name": "base/border-muted-40",
+            "value": "rgba(115, 115, 115, 0.4)"
+          },
+          {
+            "name": "base/bg-destructive-10",
+            "value": "rgba(185, 28, 28, 0.1)"
+          },
+          {
+            "name": "base/bg-destructive-20",
+            "value": "rgba(185, 28, 28, 0.2)"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Tailwind Colors — Paleta Completa"
+      },
+      {
+        "type": "paragraph",
+        "text": "Paleta de cores Tailwind disponível como tokens de design."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Amber"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "amber/50",
+            "value": "#fef2db"
+          },
+          {
+            "name": "amber/100",
+            "value": "#fae397"
+          },
+          {
+            "name": "amber/200",
+            "value": "#f7cf58"
+          },
+          {
+            "name": "amber/300",
+            "value": "#f8c436"
+          },
+          {
+            "name": "amber/400",
+            "value": "#f3a70f"
+          },
+          {
+            "name": "amber/500",
+            "value": "#f5920e"
+          },
+          {
+            "name": "amber/600",
+            "value": "#d97706"
+          },
+          {
+            "name": "amber/700",
+            "value": "#f26410"
+          },
+          {
+            "name": "amber/800",
+            "value": "#b45309"
+          },
+          {
+            "name": "amber/900",
+            "value": "#92400e"
+          },
+          {
+            "name": "amber/950",
+            "value": "#451a03"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Blue"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "blue/50",
+            "value": "#eff6ff"
+          },
+          {
+            "name": "blue/100",
+            "value": "#dbeafe"
+          },
+          {
+            "name": "blue/200",
+            "value": "#bfdbfe"
+          },
+          {
+            "name": "blue/300",
+            "value": "#93c5fd"
+          },
+          {
+            "name": "blue/400",
+            "value": "#60a5fa"
+          },
+          {
+            "name": "blue/500",
+            "value": "#3b82f6"
+          },
+          {
+            "name": "blue/600",
+            "value": "#2563eb"
+          },
+          {
+            "name": "blue/700",
+            "value": "#1d4ed8"
+          },
+          {
+            "name": "blue/800",
+            "value": "#1e40af"
+          },
+          {
+            "name": "blue/900",
+            "value": "#1e3a8a"
+          },
+          {
+            "name": "blue/950",
+            "value": "#172554"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Cyan"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "cyan/50",
+            "value": "#ecfeff"
+          },
+          {
+            "name": "cyan/100",
+            "value": "#cffafe"
+          },
+          {
+            "name": "cyan/200",
+            "value": "#a5f3fc"
+          },
+          {
+            "name": "cyan/300",
+            "value": "#67e8f9"
+          },
+          {
+            "name": "cyan/400",
+            "value": "#22d3ee"
+          },
+          {
+            "name": "cyan/500",
+            "value": "#06b6d4"
+          },
+          {
+            "name": "cyan/600",
+            "value": "#0891b2"
+          },
+          {
+            "name": "cyan/700",
+            "value": "#0e7490"
+          },
+          {
+            "name": "cyan/800",
+            "value": "#155e75"
+          },
+          {
+            "name": "cyan/900",
+            "value": "#164e63"
+          },
+          {
+            "name": "cyan/950",
+            "value": "#083344"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Emerald"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "emerald/50",
+            "value": "#ecfdf5"
+          },
+          {
+            "name": "emerald/100",
+            "value": "#d1fae5"
+          },
+          {
+            "name": "emerald/200",
+            "value": "#a7f3d0"
+          },
+          {
+            "name": "emerald/300",
+            "value": "#6acba7"
+          },
+          {
+            "name": "emerald/400",
+            "value": "#42b591"
+          },
+          {
+            "name": "emerald/500",
+            "value": "#34a075"
+          },
+          {
+            "name": "emerald/600",
+            "value": "#308f60"
+          },
+          {
+            "name": "emerald/700",
+            "value": "#059669"
+          },
+          {
+            "name": "emerald/800",
+            "value": "#147057"
+          },
+          {
+            "name": "emerald/900",
+            "value": "#065f46"
+          },
+          {
+            "name": "emerald/950",
+            "value": "#065f46"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Fuchsia"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "fuchsia/50",
+            "value": "#fdf4ff"
+          },
+          {
+            "name": "fuchsia/100",
+            "value": "#fae8ff"
+          },
+          {
+            "name": "fuchsia/200",
+            "value": "#fbe8f7"
+          },
+          {
+            "name": "fuchsia/300",
+            "value": "#f0abfc"
+          },
+          {
+            "name": "fuchsia/400",
+            "value": "#ee89e5"
+          },
+          {
+            "name": "fuchsia/500",
+            "value": "#ec68d7"
+          },
+          {
+            "name": "fuchsia/600",
+            "value": "#e23bbb"
+          },
+          {
+            "name": "fuchsia/700",
+            "value": "#cd1895"
+          },
+          {
+            "name": "fuchsia/800",
+            "value": "#aa0f81"
+          },
+          {
+            "name": "fuchsia/900",
+            "value": "#980e78"
+          },
+          {
+            "name": "fuchsia/950",
+            "value": "#5e094a"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Gray"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "gray/50",
+            "value": "#f9fafb"
+          },
+          {
+            "name": "gray/100",
+            "value": "#f3f4f6"
+          },
+          {
+            "name": "gray/200",
+            "value": "#f1f0f3"
+          },
+          {
+            "name": "gray/300",
+            "value": "#dcdae0"
+          },
+          {
+            "name": "gray/400",
+            "value": "#c9c7ce"
+          },
+          {
+            "name": "gray/500",
+            "value": "#aaaab3"
+          },
+          {
+            "name": "gray/600",
+            "value": "#7e7e88"
+          },
+          {
+            "name": "gray/700",
+            "value": "#676771"
+          },
+          {
+            "name": "gray/800",
+            "value": "#45444e"
+          },
+          {
+            "name": "gray/900",
+            "value": "#38393e"
+          },
+          {
+            "name": "gray/950",
+            "value": "#1f1e24"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Green"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "green/50",
+            "value": "#f0fdf4"
+          },
+          {
+            "name": "green/100",
+            "value": "#c4f7c7"
+          },
+          {
+            "name": "green/200",
+            "value": "#9ee7a4"
+          },
+          {
+            "name": "green/300",
+            "value": "#5dd265"
+          },
+          {
+            "name": "green/400",
+            "value": "#3ec848"
+          },
+          {
+            "name": "green/500",
+            "value": "#31b23a"
+          },
+          {
+            "name": "green/600",
+            "value": "#2b9a32"
+          },
+          {
+            "name": "green/700",
+            "value": "#288b2e"
+          },
+          {
+            "name": "green/800",
+            "value": "#237a28"
+          },
+          {
+            "name": "green/900",
+            "value": "#166534"
+          },
+          {
+            "name": "green/950",
+            "value": "#19591d"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Indigo"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "indigo/50",
+            "value": "#e3e6fa"
+          },
+          {
+            "name": "indigo/100",
+            "value": "#c8c2f9"
+          },
+          {
+            "name": "indigo/200",
+            "value": "#b1a8f7"
+          },
+          {
+            "name": "indigo/300",
+            "value": "#9589ee"
+          },
+          {
+            "name": "indigo/400",
+            "value": "#7a6ddf"
+          },
+          {
+            "name": "indigo/500",
+            "value": "#6558ce"
+          },
+          {
+            "name": "indigo/600",
+            "value": "#5744c7"
+          },
+          {
+            "name": "indigo/700",
+            "value": "#4b32af"
+          },
+          {
+            "name": "indigo/800",
+            "value": "#4426a5"
+          },
+          {
+            "name": "indigo/900",
+            "value": "#381f89"
+          },
+          {
+            "name": "indigo/950",
+            "value": "#20124e"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Lime"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "lime/50",
+            "value": "#f7fee7"
+          },
+          {
+            "name": "lime/100",
+            "value": "#ecfccb"
+          },
+          {
+            "name": "lime/200",
+            "value": "#d9f99d"
+          },
+          {
+            "name": "lime/300",
+            "value": "#bef264"
+          },
+          {
+            "name": "lime/400",
+            "value": "#a3e635"
+          },
+          {
+            "name": "lime/500",
+            "value": "#84cc16"
+          },
+          {
+            "name": "lime/600",
+            "value": "#77bf0a"
+          },
+          {
+            "name": "lime/700",
+            "value": "#65a30d"
+          },
+          {
+            "name": "lime/800",
+            "value": "#4a7217"
+          },
+          {
+            "name": "lime/900",
+            "value": "#3e5c19"
+          },
+          {
+            "name": "lime/950",
+            "value": "#2e4712"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Neutral"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "neutral/50",
+            "value": "#fafafa"
+          },
+          {
+            "name": "neutral/100",
+            "value": "#f5f5f5"
+          },
+          {
+            "name": "neutral/200",
+            "value": "#e5e5e5"
+          },
+          {
+            "name": "neutral/300",
+            "value": "#d4d4d4"
+          },
+          {
+            "name": "neutral/400",
+            "value": "#a3a3a3"
+          },
+          {
+            "name": "neutral/500",
+            "value": "#737373"
+          },
+          {
+            "name": "neutral/600",
+            "value": "#525252"
+          },
+          {
+            "name": "neutral/700",
+            "value": "#404040"
+          },
+          {
+            "name": "neutral/800",
+            "value": "#262626"
+          },
+          {
+            "name": "neutral/900",
+            "value": "#171717"
+          },
+          {
+            "name": "neutral/950",
+            "value": "#0a0a0a"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Orange"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "orange/50",
+            "value": "#fff7ed"
+          },
+          {
+            "name": "orange/100",
+            "value": "#fae8c2"
+          },
+          {
+            "name": "orange/200",
+            "value": "#f9d384"
+          },
+          {
+            "name": "orange/300",
+            "value": "#fea250"
+          },
+          {
+            "name": "orange/400",
+            "value": "#ff9639"
+          },
+          {
+            "name": "orange/500",
+            "value": "#f57b0f"
+          },
+          {
+            "name": "orange/600",
+            "value": "#ea7106"
+          },
+          {
+            "name": "orange/700",
+            "value": "#d76704"
+          },
+          {
+            "name": "orange/800",
+            "value": "#b65703"
+          },
+          {
+            "name": "orange/900",
+            "value": "#974a05"
+          },
+          {
+            "name": "orange/950",
+            "value": "#683201"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Pink"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "pink/50",
+            "value": "#fdf2f8"
+          },
+          {
+            "name": "pink/100",
+            "value": "#ffe3f3"
+          },
+          {
+            "name": "pink/200",
+            "value": "#f9cbe3"
+          },
+          {
+            "name": "pink/300",
+            "value": "#f6a1d6"
+          },
+          {
+            "name": "pink/400",
+            "value": "#f165b1"
+          },
+          {
+            "name": "pink/500",
+            "value": "#ec4899"
+          },
+          {
+            "name": "pink/600",
+            "value": "#d03584"
+          },
+          {
+            "name": "pink/700",
+            "value": "#db2777"
+          },
+          {
+            "name": "pink/800",
+            "value": "#c3236a"
+          },
+          {
+            "name": "pink/900",
+            "value": "#9d1a54"
+          },
+          {
+            "name": "pink/950",
+            "value": "#831345"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Purple"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "purple/50",
+            "value": "#faf5ff"
+          },
+          {
+            "name": "purple/100",
+            "value": "#edddfd"
+          },
+          {
+            "name": "purple/200",
+            "value": "#dcc2fa"
+          },
+          {
+            "name": "purple/300",
+            "value": "#ca9efd"
+          },
+          {
+            "name": "purple/400",
+            "value": "#bc89f9"
+          },
+          {
+            "name": "purple/500",
+            "value": "#9d61e7"
+          },
+          {
+            "name": "purple/600",
+            "value": "#9527e9"
+          },
+          {
+            "name": "purple/700",
+            "value": "#761bcb"
+          },
+          {
+            "name": "purple/800",
+            "value": "#6a14ba"
+          },
+          {
+            "name": "purple/900",
+            "value": "#5c0ea6"
+          },
+          {
+            "name": "purple/950",
+            "value": "#511b7b"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Red"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "red/50",
+            "value": "#fef2f2"
+          },
+          {
+            "name": "red/100",
+            "value": "#fee2e2"
+          },
+          {
+            "name": "red/200",
+            "value": "#ffb1b1"
+          },
+          {
+            "name": "red/300",
+            "value": "#ff8686"
+          },
+          {
+            "name": "red/400",
+            "value": "#ff5858"
+          },
+          {
+            "name": "red/500",
+            "value": "#ff2f2f"
+          },
+          {
+            "name": "red/600",
+            "value": "#dc2626"
+          },
+          {
+            "name": "red/700",
+            "value": "#be1919"
+          },
+          {
+            "name": "red/800",
+            "value": "#ad1414"
+          },
+          {
+            "name": "red/900",
+            "value": "#911111"
+          },
+          {
+            "name": "red/950",
+            "value": "#6a0c0c"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Rose"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "rose/50",
+            "value": "#fff1f2"
+          },
+          {
+            "name": "rose/100",
+            "value": "#ffe4e6"
+          },
+          {
+            "name": "rose/200",
+            "value": "#fecdd3"
+          },
+          {
+            "name": "rose/300",
+            "value": "#fda4af"
+          },
+          {
+            "name": "rose/400",
+            "value": "#fb7185"
+          },
+          {
+            "name": "rose/500",
+            "value": "#f43f5e"
+          },
+          {
+            "name": "rose/600",
+            "value": "#e11d48"
+          },
+          {
+            "name": "rose/700",
+            "value": "#be123c"
+          },
+          {
+            "name": "rose/800",
+            "value": "#9f1239"
+          },
+          {
+            "name": "rose/900",
+            "value": "#881337"
+          },
+          {
+            "name": "rose/950",
+            "value": "#4c0519"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Sky"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "sky/50",
+            "value": "#e0f4f8"
+          },
+          {
+            "name": "sky/100",
+            "value": "#b4e6f4"
+          },
+          {
+            "name": "sky/200",
+            "value": "#9cdff1"
+          },
+          {
+            "name": "sky/300",
+            "value": "#6ed5eb"
+          },
+          {
+            "name": "sky/400",
+            "value": "#4abbea"
+          },
+          {
+            "name": "sky/500",
+            "value": "#33aae4"
+          },
+          {
+            "name": "sky/600",
+            "value": "#2897df"
+          },
+          {
+            "name": "sky/700",
+            "value": "#1b89bd"
+          },
+          {
+            "name": "sky/800",
+            "value": "#0d6a9f"
+          },
+          {
+            "name": "sky/900",
+            "value": "#0c4a6e"
+          },
+          {
+            "name": "sky/950",
+            "value": "#082f49"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Slate"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "slate/50",
+            "value": "#f8fafc"
+          },
+          {
+            "name": "slate/100",
+            "value": "#f1f5f9"
+          },
+          {
+            "name": "slate/200",
+            "value": "#e2e8f0"
+          },
+          {
+            "name": "slate/300",
+            "value": "#cbd5e1"
+          },
+          {
+            "name": "slate/400",
+            "value": "#94a3b8"
+          },
+          {
+            "name": "slate/500",
+            "value": "#64748b"
+          },
+          {
+            "name": "slate/600",
+            "value": "#475569"
+          },
+          {
+            "name": "slate/700",
+            "value": "#334155"
+          },
+          {
+            "name": "slate/800",
+            "value": "#1e293b"
+          },
+          {
+            "name": "slate/900",
+            "value": "#0f172a"
+          },
+          {
+            "name": "slate/950",
+            "value": "#020617"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Stone"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "stone/50",
+            "value": "#fafaf9"
+          },
+          {
+            "name": "stone/100",
+            "value": "#f5f5f4"
+          },
+          {
+            "name": "stone/200",
+            "value": "#e7e5e4"
+          },
+          {
+            "name": "stone/300",
+            "value": "#d6d3d1"
+          },
+          {
+            "name": "stone/400",
+            "value": "#a8a29e"
+          },
+          {
+            "name": "stone/500",
+            "value": "#78716c"
+          },
+          {
+            "name": "stone/600",
+            "value": "#57534e"
+          },
+          {
+            "name": "stone/700",
+            "value": "#44403c"
+          },
+          {
+            "name": "stone/800",
+            "value": "#292524"
+          },
+          {
+            "name": "stone/900",
+            "value": "#1c1917"
+          },
+          {
+            "name": "stone/950",
+            "value": "#0c0a09"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Teal"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "teal/50",
+            "value": "#f0fdfa"
+          },
+          {
+            "name": "teal/100",
+            "value": "#ccfbf1"
+          },
+          {
+            "name": "teal/200",
+            "value": "#99f6e4"
+          },
+          {
+            "name": "teal/300",
+            "value": "#5eead4"
+          },
+          {
+            "name": "teal/400",
+            "value": "#2dd4bf"
+          },
+          {
+            "name": "teal/500",
+            "value": "#14b8a6"
+          },
+          {
+            "name": "teal/600",
+            "value": "#0d9488"
+          },
+          {
+            "name": "teal/700",
+            "value": "#0f766e"
+          },
+          {
+            "name": "teal/800",
+            "value": "#115e59"
+          },
+          {
+            "name": "teal/900",
+            "value": "#134e4a"
+          },
+          {
+            "name": "teal/950",
+            "value": "#042f2e"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Violet"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "violet/50",
+            "value": "#f5f3ff"
+          },
+          {
+            "name": "violet/100",
+            "value": "#ede9fe"
+          },
+          {
+            "name": "violet/200",
+            "value": "#ddd6fe"
+          },
+          {
+            "name": "violet/300",
+            "value": "#c4b5fd"
+          },
+          {
+            "name": "violet/400",
+            "value": "#a78bfa"
+          },
+          {
+            "name": "violet/500",
+            "value": "#8b5cf6"
+          },
+          {
+            "name": "violet/600",
+            "value": "#7c3aed"
+          },
+          {
+            "name": "violet/700",
+            "value": "#6d28d9"
+          },
+          {
+            "name": "violet/800",
+            "value": "#5b21b6"
+          },
+          {
+            "name": "violet/900",
+            "value": "#4c1d95"
+          },
+          {
+            "name": "violet/950",
+            "value": "#2e1065"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Yellow"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "yellow/50",
+            "value": "#fefce8"
+          },
+          {
+            "name": "yellow/100",
+            "value": "#fef9c3"
+          },
+          {
+            "name": "yellow/200",
+            "value": "#fef08a"
+          },
+          {
+            "name": "yellow/300",
+            "value": "#ffe352"
+          },
+          {
+            "name": "yellow/400",
+            "value": "#ffd21f"
+          },
+          {
+            "name": "yellow/500",
+            "value": "#f8c00f"
+          },
+          {
+            "name": "yellow/600",
+            "value": "#f5b40f"
+          },
+          {
+            "name": "yellow/700",
+            "value": "#e9ab0f"
+          },
+          {
+            "name": "yellow/800",
+            "value": "#d49c0f"
+          },
+          {
+            "name": "yellow/900",
+            "value": "#af820f"
+          },
+          {
+            "name": "yellow/950",
+            "value": "#82600c"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Zinc"
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "zinc/50",
+            "value": "#fafafa"
+          },
+          {
+            "name": "zinc/100",
+            "value": "#f4f4f5"
+          },
+          {
+            "name": "zinc/200",
+            "value": "#e4e4e7"
+          },
+          {
+            "name": "zinc/300",
+            "value": "#d4d4d8"
+          },
+          {
+            "name": "zinc/400",
+            "value": "#a1a1aa"
+          },
+          {
+            "name": "zinc/500",
+            "value": "#71717a"
+          },
+          {
+            "name": "zinc/600",
+            "value": "#52525b"
+          },
+          {
+            "name": "zinc/700",
+            "value": "#3f3f46"
+          },
+          {
+            "name": "zinc/800",
+            "value": "#27272a"
+          },
+          {
+            "name": "zinc/900",
+            "value": "#18181b"
+          },
+          {
+            "name": "zinc/950",
+            "value": "#09090b"
+          }
+        ]
+      }
+    ]
+  },
+  "tipografia": {
+    "title": "Tokens de Tipografia",
+    "description": "Font families, tamanhos, pesos e alturas de linha extraídos do Figma.",
+    "content": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Font Family por Tema"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Multitude: Nunito",
+          "Bernoulli: Mulish"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Font Size"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "text-xs                 12px   text-xs\ntext-sm                 14px   text-sm\ntext-base               16px   text-base\ntext-lg                 18px   text-lg\ntext-xl                 20px   text-xl\ntext-2xl                24px   text-2xl\ntext-3xl                32px   text-3xl\ntext-4xl                40px   text-4xl\ntext-5xl                48px   text-5xl\ntext-6xl                64px   text-6xl\ntext-7xl                72px   text-7xl\ntext-8xl                96px   text-8xl\ntext-9xl               124px   text-9xl"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Line Height"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-3            12   leading-3\nleading-4            16   leading-4\nleading-5            20   leading-5\nleading-6            24   leading-6\nleading-7            28   leading-7\nleading-8            32   leading-8\nleading-9            36   leading-9\nleading-10           40   leading-10"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Font Weight"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "font-thin            100\nfont-extralight      200\nfont-light           300\nfont-normal          400\nfont-medium          500\nfont-semibold        600\nfont-bold            700\nfont-extrabold       800\nfont-black           900"
+      }
+    ]
+  },
+  "primitivos": {
+    "title": "Primitivos Tailwind",
+    "description": "Border radius, espaçamentos, opacidades e outras primitivas extraídas do Figma.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Primitivos de design baseados nas escalas do Tailwind CSS, exportados como variáveis Figma."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Border Radius"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "rounded-none                    0   border radius/rounded-none\nrounded-sm                      2   border radius/rounded-sm\nrounded                         4   border radius/rounded\nrounded-md                      6   border radius/rounded-md\nrounded-lg                      8   border radius/rounded-lg\nrounded-xl                     12   border radius/rounded-xl\nrounded-2xl                    16   border radius/rounded-2xl\nrounded-3xl                    24   border radius/rounded-3xl\nrounded-full                 9999   border radius/rounded-full"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Gap / Espaçamento"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "gap-0                           0   gap/gap-0\ngap-px                          1   gap/gap-px\ngap-0,5                         2   gap/gap-0,5\ngap-1                           4   gap/gap-1\ngap-1,5                         6   gap/gap-1,5\ngap-2                           8   gap/gap-2\ngap-3                          12   gap/gap-3\ngap-4                          16   gap/gap-4\ngap-5                          20   gap/gap-5\ngap-6                          24   gap/gap-6\ngap-7                          28   gap/gap-7\ngap-8                          32   gap/gap-8\ngap-9                          36   gap/gap-9\ngap-10                         40   gap/gap-10\ngap-11                         44   gap/gap-11\ngap-12                         48   gap/gap-12\ngap-14                         56\ngap-16                         64   gap/gap-16\ngap-18                         72   gap/gap-18\ngap-20                         80   gap/gap-20\ngap-24                         96   gap/gap-24\ngap-28                        112   gap/gap-28\ngap-32                        128   gap/gap-32\ngap-64                        256   gap/gap-64"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Padding"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "p-0                             0   padding/p-0\np-0,5                           2   padding/p-0,5\np-1                             4   padding/p-1\np-1,5                           6   padding/p-1,5\np-2                             8   padding/p-2\np-2,5                          10\np-3                            12   padding/p-3\np-3,5                          14   padding/p-3,5\np-4                            16   padding/p-4\np-5                            20   padding/p-5\np-6                            24   padding/p-6\np-7                            28   padding/p-7\np-8                            32   padding/p-8\np-9                            36   padding/p-9\np-10                           40   padding/p-10\np-11                           44   padding/p-11\np-12                           48   padding/p-12"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Max Width"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "max-w-xs                      320   max-w/max-w-xs\nmax-w-sm                      384   max-w/max-w-sm\nmax-w-md                      448\nmax-w-lg                      512   max-w/max-w-lg\nmax-w-xl                      576   max-w/max-w-xl\nmax-w-2xl                     672   max-w/max-w-2xl\nmax-w-3xl                     768   max-w/max-w-3xl\nmax-w-4xl                     896   max-w/max-w-4xl\nmax-w-5xl                    1024   max-w/max-w-5xl\nmax-w-6xl                    1152   max-w/max-w-6xl\nmax-w-7xl                    1280   max-w/max-w-7xl\nmax-w-screen-sm               640   max-w/max-w-screen-sm\nmax-w-screen-md               768   max-w/max-w-screen-md\nmax-w-screen-lg              1024   max-w/max-w-screen-lg\nmax-w-screen-xl              1280   max-w/max-w-screen-xl\nmax-w-screen-2xl             1536   max-w/max-w-screen-2xl"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Opacidade"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "opacity-0                       0   opacity-0\nopacity-5                       5   opacity/opacity-5\nopacity-10                     10   opacity-10\nopacity-20                     20   opacity-20\nopacity-25                     25   opacity/opacity-25\nopacity-30                     30   opacity-30\nopacity-40                     40   opacity-40\nopacity-50                     50   opacity-50\nopacity-60                     60   opacity-60\nopacity-70                     70   opacity-70\nopacity-80                     80   opacity-80\nopacity-90                     90   opacity-90\nopacity-95                     95   opacity/opacity-95\nopacity-100                   100   opacity-100"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Radius (semântico)"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "radius                   {border radius.rounded-2xl}\nradius-md                {border radius.rounded-lg}\nradius-sm                {border radius.rounded}"
+      }
+    ]
+  }
+}

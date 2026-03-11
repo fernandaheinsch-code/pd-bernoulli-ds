@@ -104,6 +104,28 @@
       ]
     },
     {
+      "title": "Tokens",
+      "icon": "Palette",
+      "items": [
+        {
+          "title": "Visão Geral",
+          "path": "/docs/tokens"
+        },
+        {
+          "title": "Cores",
+          "path": "/docs/tokens/cores"
+        },
+        {
+          "title": "Tipografia",
+          "path": "/docs/tokens/tipografia"
+        },
+        {
+          "title": "Primitivos",
+          "path": "/docs/tokens/primitivos"
+        }
+      ]
+    },
+    {
       "title": "FAQ",
       "path": "/docs/faq",
       "icon": "HelpCircle"

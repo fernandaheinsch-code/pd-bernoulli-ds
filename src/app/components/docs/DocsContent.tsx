@@ -3,6 +3,11 @@ import { AlertCircle, CheckCircle, Info, AlertTriangle, Copy, Check } from 'luci
 import * as LucideIcons from 'lucide-react';
 import { useState } from 'react';
 
+interface ColorToken {
+  name: string;
+  value: string;
+}
+
 interface ContentBlock {
   type: string;
   text?: string;
@@ -16,6 +21,7 @@ interface ContentBlock {
   link?: string;
   icon?: string;
   description?: string;
+  tokens?: ColorToken[];
 }
 
 interface DocsContentProps {
@@ -176,6 +182,27 @@ export function DocsContent({ title, description, content }: DocsContentProps) {
                   {item.answer}
                 </div>
               </details>
+            ))}
+          </div>
+        );
+
+      case 'color-tokens':
+        return (
+          <div key={index} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-8">
+            {block.tokens?.map((token, i) => (
+              <div key={i} className="rounded-lg overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div
+                  className="h-14 w-full"
+                  style={{ backgroundColor: token.value }}
+                  title={token.value}
+                />
+                <div className="p-2 bg-white">
+                  <div className="font-mono text-xs text-gray-800 font-semibold truncate" title={token.name}>
+                    {token.name}
+                  </div>
+                  <div className="font-mono text-xs text-gray-500 uppercase mt-0.5">{token.value}</div>
+                </div>
+              </div>
             ))}
           </div>
         );

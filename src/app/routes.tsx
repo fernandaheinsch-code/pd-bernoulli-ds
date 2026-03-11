@@ -5,6 +5,7 @@ import IntroducaoPage from './pages/docs/IntroducaoPage';
 import GettingStartedPage from './pages/docs/GettingStartedPage';
 import FAQPage from './pages/docs/FAQPage';
 import GenericDocPage from './pages/docs/GenericDocPage';
+import TokensPage from './pages/docs/TokensPage';
 
 export const router = createBrowserRouter([
   {
@@ -47,9 +48,18 @@ export const router = createBrowserRouter([
         element: <GenericDocPage /> 
       },
       // Rotas genéricas para exemplos
-      { 
-        path: 'exemplos/:page', 
-        element: <GenericDocPage /> 
+      {
+        path: 'exemplos/:page',
+        element: <GenericDocPage />
+      },
+      // Tokens (gerados do Figma)
+      {
+        path: 'tokens',
+        element: <TokensPage />,
+      },
+      {
+        path: 'tokens/:page',
+        element: <TokensPage />,
       },
     ],
   },
