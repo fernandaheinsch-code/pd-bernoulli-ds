@@ -1,0 +1,46 @@
+{
+  "title": "Changelog",
+  "description": "Histórico de alterações do Bernoulli Design System gerado automaticamente a partir do git.",
+  "generatedAt": "2026-03-11T19:55:10.243Z",
+  "repository": "/root/sigmaui-figmamake",
+  "versions": [
+    {
+      "version": "Não lançado",
+      "date": null,
+      "dateFormatted": null,
+      "isUnreleased": true,
+      "breakingChanges": false,
+      "totalCommits": 2,
+      "changes": [
+        {
+          "type": "initial",
+          "label": "Inicial",
+          "color": "blue",
+          "items": [
+            {
+              "message": "exatamente como ta na web",
+              "scope": null,
+              "breaking": false,
+              "hash": "3088ec9",
+              "date": "2026-03-11"
+            }
+          ]
+        },
+        {
+          "type": "outros",
+          "label": "Outros",
+          "color": "gray",
+          "items": [
+            {
+              "message": "listagem de tokens",
+              "scope": null,
+              "breaking": false,
+              "hash": "1d73c78",
+              "date": "2026-03-11"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

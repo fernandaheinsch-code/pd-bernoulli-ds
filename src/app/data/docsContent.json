@@ -1,20 +1,20 @@
 {
   "introducao": {
-    "title": "Introdução ao Sigma UI",
-    "description": "Bem-vindo à documentação oficial do Sigma UI",
+    "title": "Introdução ao Bernoulli Design System",
+    "description": "Bem-vindo à documentação oficial do Bernoulli Design System",
     "content": [
       {
         "type": "paragraph",
-        "text": "Sigma UI é uma plataforma completa para desenvolvimento de aplicações web modernas. Esta documentação irá guiá-lo através de todos os recursos e funcionalidades disponíveis."
+        "text": "Bernoulli Design System é uma plataforma completa para desenvolvimento de aplicações web modernas. Esta documentação irá guiá-lo através de todos os recursos e funcionalidades disponíveis."
       },
       {
         "type": "heading",
         "level": 2,
-        "text": "O que é o Sigma UI?"
+        "text": "O que é o Bernoulli Design System?"
       },
       {
         "type": "paragraph",
-        "text": "Sigma UI é um framework full-stack que combina as melhores práticas de desenvolvimento frontend e backend em uma solução integrada. Ele oferece:"
+        "text": "Bernoulli Design System é um framework full-stack que combina as melhores práticas de desenvolvimento frontend e backend em uma solução integrada. Ele oferece:"
       },
       {
         "type": "list",
@@ -79,7 +79,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Agora que você conhece o básico, siga para o guia de Getting Started para criar seu primeiro projeto com Sigma UI."
+        "text": "Agora que você conhece o básico, siga para o guia de Getting Started para criar seu primeiro projeto com Bernoulli Design System."
       },
       {
         "type": "link-cards",
@@ -102,11 +102,11 @@
   },
   "getting-started": {
     "title": "Getting Started",
-    "description": "Comece a usar o Sigma UI em poucos minutos",
+    "description": "Comece a usar o Bernoulli Design System em poucos minutos",
     "content": [
       {
         "type": "paragraph",
-        "text": "Este guia irá ajudá-lo a criar e executar seu primeiro projeto Sigma UI em menos de 5 minutos."
+        "text": "Este guia irá ajudá-lo a criar e executar seu primeiro projeto Bernoulli Design System em menos de 5 minutos."
       },
       {
         "type": "heading",
@@ -115,7 +115,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Primeiro, instale o CLI do Sigma UI globalmente:"
+        "text": "Primeiro, instale o CLI do Bernoulli Design System globalmente:"
       },
       {
         "type": "code",
@@ -177,7 +177,7 @@
         "type": "alert",
         "variant": "success",
         "title": "Parabéns!",
-        "text": "Você criou seu primeiro projeto Sigma UI. Agora explore a documentação para aprender mais sobre os recursos disponíveis."
+        "text": "Você criou seu primeiro projeto Bernoulli Design System. Agora explore a documentação para aprender mais sobre os recursos disponíveis."
       },
       {
         "type": "heading",
@@ -221,12 +221,12 @@
         "type": "faq",
         "items": [
           {
-            "question": "O Sigma UI é gratuito?",
-            "answer": "Sim! Sigma UI é um projeto open-source com licença MIT. Você pode usá-lo gratuitamente em projetos pessoais e comerciais."
+            "question": "O Bernoulli Design System é gratuito?",
+            "answer": "Sim! Bernoulli Design System é um projeto open-source com licença MIT. Você pode usá-lo gratuitamente em projetos pessoais e comerciais."
           },
           {
-            "question": "Qual a diferença entre Sigma UI e Next.js?",
-            "answer": "Sigma UI é construído em cima do Next.js, mas adiciona uma camada de abstração com componentes pré-construídos, API integrada e configurações otimizadas. É ideal para quem quer começar rapidamente sem configurar tudo do zero."
+            "question": "Qual a diferença entre Bernoulli Design System e Next.js?",
+            "answer": "Bernoulli Design System é construído em cima do Next.js, mas adiciona uma camada de abstração com componentes pré-construídos, API integrada e configurações otimizadas. É ideal para quem quer começar rapidamente sem configurar tudo do zero."
           },
           {
             "question": "Posso usar TypeScript?",
@@ -234,7 +234,7 @@
           },
           {
             "question": "Como faço deploy?",
-            "answer": "Sigma UI funciona perfeitamente com Vercel, Netlify, AWS, e outras plataformas. Veja nosso guia de deploy para instruções detalhadas."
+            "answer": "Bernoulli Design System funciona perfeitamente com Vercel, Netlify, AWS, e outras plataformas. Veja nosso guia de deploy para instruções detalhadas."
           },
           {
             "question": "Preciso conhecer React?",

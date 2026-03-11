@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Search, Github, Menu, X } from 'lucide-react';
+import { Search, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import docsConfig from '../../data/docsConfig.json';
 
@@ -11,7 +11,7 @@ export function DocsHeader() {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/docs" className="flex items-center gap-3">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">{docsConfig.logo.charAt(0)}</span>
             </div>
@@ -24,10 +24,9 @@ export function DocsHeader() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             {/* Search */}
-            <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg text-gray-600 hover:bg-gray-200 transition-colors">
+            <button className="flex items-center gap-2 px-4 py-2 w-96 bg-gray-100 rounded-lg text-gray-600 hover:bg-gray-200 transition-colors">
               <Search size={18} />
               <span className="text-sm">Buscar...</span>
-              <kbd className="px-2 py-1 bg-white rounded text-xs border border-gray-300">⌘K</kbd>
             </button>
 
             {/* Version */}
@@ -39,16 +38,6 @@ export function DocsHeader() {
               ))}
             </select>
 
-            {/* GitHub */}
-            <a
-              href={docsConfig.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-gray-700 hover:text-gray-900 transition-colors"
-              aria-label="GitHub"
-            >
-              <Github size={20} />
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -64,7 +53,7 @@ export function DocsHeader() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="space-y-3">
-              <button className="w-full flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg text-gray-600">
+              <button className="w-full flex items-center gap-2 px-8 py-2 bg-gray-100 rounded-lg text-gray-600">
                 <Search size={18} />
                 <span className="text-sm">Buscar documentação...</span>
               </button>

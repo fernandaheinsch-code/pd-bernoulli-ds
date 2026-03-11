@@ -1,0 +1,252 @@
+{
+  "overview": {
+    "title": "Estilos do Figma",
+    "description": "Visão geral dos estilos globais extraídos do arquivo de componentes.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Estilos globais definidos no arquivo de componentes do Figma. São a fonte de verdade para cores, tipografia e sombras usadas nos componentes."
+      },
+      {
+        "type": "card-grid",
+        "cards": [
+          {
+            "icon": "Palette",
+            "title": "11 Cores",
+            "description": "Fills de cor nomeados com semântica de design."
+          },
+          {
+            "icon": "Type",
+            "title": "51 Textos",
+            "description": "Estilos de tipografia em 10 tamanhos."
+          },
+          {
+            "icon": "Layers",
+            "title": "11 Efeitos",
+            "description": "Sombras e focus rings prontos para uso."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Como atualizar"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "# No diretório dev-fer:\nmake figma-extract-styles-docs"
+      }
+    ]
+  },
+  "cores": {
+    "title": "Cores (Styles)",
+    "description": "Fills de cor nomeados do arquivo de componentes.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "11 estilos de cor extraídos do arquivo de componentes do Figma."
+      },
+      {
+        "type": "color-tokens",
+        "tokens": [
+          {
+            "name": "Neutral/800",
+            "value": "#262626",
+            "description": "neutral/800"
+          },
+          {
+            "name": "primary",
+            "value": "#470a7d",
+            "description": "Cor principal da marca ou destaque (usada para botões, links, etc.)."
+          },
+          {
+            "name": "primary-foreground",
+            "value": "#ffffff",
+            "description": "Cor do texto ou ícone dentro de elementos com primary como fundo."
+          },
+          {
+            "name": "Adams/primary",
+            "value": "#470a7d",
+            "description": null
+          },
+          {
+            "name": "Neutral/300",
+            "value": "#d4d4d4",
+            "description": "neutral/300"
+          },
+          {
+            "name": "Neutral/600",
+            "value": "#525252",
+            "description": "neutral/600"
+          },
+          {
+            "name": "Alerts/Error",
+            "value": "#da1515",
+            "description": null
+          },
+          {
+            "name": "Neutral/50",
+            "value": "#ffffff",
+            "description": "neutral/50"
+          },
+          {
+            "name": "Neutral/500",
+            "value": "#737373",
+            "description": "neutral/500"
+          },
+          {
+            "name": "Neutral/100",
+            "value": "#f5f5f5",
+            "description": "neutral/100"
+          },
+          {
+            "name": "Adams/Brand/secundary-purple",
+            "value": "#bb80f7",
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  "tipografia": {
+    "title": "Tipografia (Styles)",
+    "description": "Estilos de texto extraídos do arquivo de componentes.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "51 estilos de texto em 10 tamanhos."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-xs  —  12px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-4/normal        peso    400   lh 16px      ls -0.12px\nleading-4/semibold      peso    600   lh 16px      ls -0.12px\nleading-5/normal        peso    400   lh 20px      ls -0.12px\nleading-4/normal        peso    400   lh 16px      ls 0px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-sm  —  14px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-none/normal     peso    400   lh 14px      ls -0.14px\nleading-none/semibold   peso    600   lh 14px      ls -0.14px\nleading-none/bold       peso    700   lh 14px      ls -0.14px\nleading-none/extrabold  peso    800   lh 14px      ls -0.14px\nleading-6/normal        peso    400   lh 24px      ls -0.14px\nleading-6/semibold      peso    600   lh 24px      ls -0.14px\nleading-6/bold          peso    700   lh 24px      ls -0.14px\nleading-5/normal        peso    400   lh 20px      ls -0.14px\nleading-5/bold          peso    700   lh 20px      ls -0.14px\nleading-5/semibold      peso    600   lh 20px      ls 0px\nleading-5/normal        peso    400   lh 20px      ls 0px\nleading-6/medium        peso    500   lh 24px      ls 0px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-base  —  16px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-none/normal     peso    400   lh 16px      ls -0.16px\nleading-none/medium     peso    500   lh 16px      ls -0.16px\nleading-none/semibold   peso    600   lh 16px      ls -0.16px\nleading-none/bold       peso    700   lh 16px      ls -0.16px\nleading-6/normal        peso    400   lh 24px      ls -0.16px\nleading-6/semibold      peso    600   lh 24px      ls -0.16px\nleading-6/bold          peso    700   lh 24px      ls -0.16px\nleading-6/semibold      peso    600   lh 24px      ls 0px\nleading-6/normal        peso    400   lh 24px      ls 0px\nleading-none/semibold   peso    600   lh 16px      ls -0.16px\nleading-6/normal        peso    400   lh 24px      ls -0.16px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-lg  —  18px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-7/normal        peso    400   lh 28px      ls -0.18px\nleading-7/semibold      peso    600   lh 28px      ls -0.18px\nleading-7/bold          peso    700   lh 28px      ls -0.18px\nleading-none/normal     peso    400   lh 18px      ls -0.18px\nleading-none/semibold   peso    600   lh 18px      ls -0.18px\nleading-none/extrabold  peso    800   lh 18px      ls -0.18px\nleading-7/normal        peso    400   lh 28px      ls 0px\nleading-7/bold          peso    700   lh 28px      ls -0.18px\nleading-7/semibold      peso    600   lh 28px      ls 0px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-xl  —  20px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-7/bold          peso    700   lh 28px      ls -0.2px\nleading-none/extrabold  peso    800   lh 20px      ls -0.2px\nleading-7/semibold      peso    600   lh 28px      ls -0.6000000238418579px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-2xl  —  24px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-10/semibold     peso    600   lh 32px      ls -0.24px\nleading-10/bold         peso    700   lh 32px      ls -0.24px\nleading-none/semibold   peso    600   lh 24px      ls -0.24px\nleading-none/extrabold  peso    800   lh 24px      ls -0.24px\nleading-10/bold         peso    700   lh 32px      ls -0.24px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-3xl  —  32px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-none/extrabold  peso    800   lh 32px      ls -0.32px\nleading-10/bold         peso    700   lh 36px      ls -0.32px\nleading-9/bold          peso    700   lh 36px      ls 0px\nleading-10/bold         peso    700   lh 36px      ls -0.32px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-4xl  —  40px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "leading-10/bold         peso    700   lh 40px      ls -0.4px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "text-5xl  —  48px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "bold                    peso    700   lh 48px      ls -0.48px"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Caption 2  —  10px"
+      },
+      {
+        "type": "code",
+        "language": "text",
+        "code": "Caption 2 - medium      peso    500   lh 12px      ls 0px"
+      }
+    ]
+  },
+  "efeitos": {
+    "title": "Efeitos & Sombras",
+    "description": "Sombras e focus rings do arquivo de componentes.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "11 efeitos de sombra e foco."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Sombras (box-shadow)"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "shadows/shadow-sm             0px 1px 2px 0px rgba(0,0,0,0.05)\nshadows/shadow                (sem valor resolvido)\nshadows/shadow-lg             (sem valor resolvido)\nshadows/shadow-xl             (sem valor resolvido)\nshadows/shadow-2xl            0px 25px 50px -12px rgba(0,0,0,0.25)\nshadows/shadow-inner          (sem valor resolvido)\nshadows/shadow-md             0px 2px 4px -2px rgba(0,0,0,0.10), 0px 4px 6px -1px rgba(0,0,0,0.10)\nCard-Shadow-Small             0px 2px 16px 0px rgba(0,0,0,0.05)\nshadows/shadow-lg             0px 4px 6px -4px rgba(0,0,0,0.10), 0px 10px 15px -3px rgba(0,0,0,0.10)"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Focus Rings"
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "code": "focus ring/2px - Destructive          0px 0px 10px -2px rgba(220,38,38,1.00)\nfocus ring/2px - Primary              0px 0px 10px -2px rgba(115,37,184,1.00)"
+      }
+    ]
+  }
+}

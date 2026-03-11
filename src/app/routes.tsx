@@ -1,22 +1,23 @@
-import { createBrowserRouter } from 'react-router';
+import { createBrowserRouter, Navigate } from 'react-router';
 import { DocsLayout } from './components/docs/DocsLayout';
-import HomePage from './pages/HomePage';
 import IntroducaoPage from './pages/docs/IntroducaoPage';
 import GettingStartedPage from './pages/docs/GettingStartedPage';
 import FAQPage from './pages/docs/FAQPage';
 import GenericDocPage from './pages/docs/GenericDocPage';
 import TokensPage from './pages/docs/TokensPage';
+import ChangelogPage from './pages/docs/ChangelogPage';
+import StylesPage from './pages/docs/StylesPage';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
+    element: <Navigate to="/docs" replace />,
   },
   {
     path: '/docs',
     element: <DocsLayout />,
     children: [
-      { 
+      {
         index: true,
         element: <IntroducaoPage />
       },
@@ -60,6 +61,20 @@ export const router = createBrowserRouter([
       {
         path: 'tokens/:page',
         element: <TokensPage />,
+      },
+      // Styles (estilos extraídos do Figma components)
+      {
+        path: 'styles',
+        element: <StylesPage />,
+      },
+      {
+        path: 'styles/:page',
+        element: <StylesPage />,
+      },
+      // Changelog (gerado do git)
+      {
+        path: 'changelog',
+        element: <ChangelogPage />,
       },
     ],
   },

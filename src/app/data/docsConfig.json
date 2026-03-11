@@ -1,9 +1,8 @@
 {
-  "siteName": "Sigma UI Documentation",
+  "siteName": "Bernoulli Design System",
   "tagline": "Documentação Técnica Completa",
   "version": "v2.0",
-  "logo": "Sigma UI",
-  "github": "https://github.com/sigma-ui/sigma-ui",
+  "logo": "Bernoulli Design System",
   "versions": [
     { "label": "v2.0", "path": "/v2" },
     { "label": "v1.0", "path": "/v1" }
@@ -126,17 +125,40 @@
       ]
     },
     {
+      "title": "Styles",
+      "icon": "Sparkles",
+      "items": [
+        {
+          "title": "Visão Geral",
+          "path": "/docs/styles"
+        },
+        {
+          "title": "Cores",
+          "path": "/docs/styles/cores"
+        },
+        {
+          "title": "Tipografia",
+          "path": "/docs/styles/tipografia"
+        },
+        {
+          "title": "Efeitos",
+          "path": "/docs/styles/efeitos"
+        }
+      ]
+    },
+    {
+      "title": "Changelog",
+      "path": "/docs/changelog",
+      "icon": "GitCommitHorizontal"
+    },
+    {
       "title": "FAQ",
       "path": "/docs/faq",
       "icon": "HelpCircle"
     }
   ],
   "footer": {
-    "links": [
-      { "label": "GitHub", "url": "https://github.com/sigma-ui" },
-      { "label": "Discord", "url": "https://discord.gg/sigma-ui" },
-      { "label": "Twitter", "url": "https://twitter.com/sigma-ui" }
-    ],
-    "copyright": "© 2026 Sigma UI. MIT License."
+    "links": [],
+    "copyright": "© 2026 Bernoulli Design System. MIT License."
   }
 }

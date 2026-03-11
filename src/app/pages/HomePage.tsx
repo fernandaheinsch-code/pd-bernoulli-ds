@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { BookOpen, Rocket, Code, Lightbulb, ArrowRight, Github, MessageCircle, Twitter } from 'lucide-react';
+import { BookOpen, Rocket, Code, Lightbulb, ArrowRight } from 'lucide-react';
 import docsConfig from '../data/docsConfig.json';
 
 export default function HomePage() {
@@ -17,14 +17,6 @@ export default function HomePage() {
             </Link>
 
             <div className="flex items-center gap-4">
-              <a
-                href={docsConfig.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-gray-900 transition-colors"
-              >
-                <Github size={20} />
-              </a>
               <Link
                 to="/docs/introducao"
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
@@ -72,30 +64,11 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">100+</div>
-              <div className="text-sm text-gray-600">Páginas de Docs</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">50+</div>
-              <div className="text-sm text-gray-600">Exemplos de Código</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">20+</div>
-              <div className="text-sm text-gray-600">Guias Práticos</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">24/7</div>
-              <div className="text-sm text-gray-600">Suporte Comunidade</div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" style={{ marginTop: '148px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -174,36 +147,6 @@ export default function HomePage() {
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto para Começar?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Explore nossa documentação e comece a construir hoje mesmo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/docs/getting-started"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 transition-all hover:scale-105 shadow-xl font-semibold"
-            >
-              Começar Agora
-              <ArrowRight size={20} />
-            </Link>
-            <a
-              href={docsConfig.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg hover:bg-white/20 transition-all border border-white/20 font-semibold"
-            >
-              <Github size={20} />
-              Ver no GitHub
-            </a>
           </div>
         </div>
       </section>

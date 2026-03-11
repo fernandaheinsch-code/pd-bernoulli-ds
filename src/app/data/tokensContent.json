@@ -5,7 +5,7 @@
     "content": [
       {
         "type": "paragraph",
-        "text": "Os tokens de design são a fonte da verdade para cores, tipografia e espaçamentos do Sigma UI. Eles são exportados diretamente das variáveis do Figma e inseridos na documentação via script automatizado."
+        "text": "Os tokens de design são a fonte da verdade para cores, tipografia e espaçamentos do Bernoulli Design System. Eles são exportados diretamente das variáveis do Figma e inseridos na documentação via script automatizado."
       },
       {
         "type": "heading",
