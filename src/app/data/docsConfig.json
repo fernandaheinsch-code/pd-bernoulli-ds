@@ -1,0 +1,120 @@
+{
+  "siteName": "Sigma UI Documentation",
+  "tagline": "Documentação Técnica Completa",
+  "version": "v2.0",
+  "logo": "Sigma UI",
+  "github": "https://github.com/sigma-ui/sigma-ui",
+  "versions": [
+    { "label": "v2.0", "path": "/v2" },
+    { "label": "v1.0", "path": "/v1" }
+  ],
+  "navigation": [
+    {
+      "title": "Introdução",
+      "path": "/docs/introducao",
+      "icon": "BookOpen"
+    },
+    {
+      "title": "Getting Started",
+      "path": "/docs/getting-started",
+      "icon": "Rocket"
+    },
+    {
+      "title": "Guias",
+      "icon": "BookMarked",
+      "items": [
+        {
+          "title": "Instalação",
+          "path": "/docs/guias/instalacao"
+        },
+        {
+          "title": "Configuração",
+          "path": "/docs/guias/configuracao"
+        },
+        {
+          "title": "Autenticação",
+          "path": "/docs/guias/autenticacao"
+        },
+        {
+          "title": "Deploy",
+          "path": "/docs/guias/deploy"
+        }
+      ]
+    },
+    {
+      "title": "API Reference",
+      "icon": "Code",
+      "items": [
+        {
+          "title": "Endpoints",
+          "path": "/docs/api/endpoints"
+        },
+        {
+          "title": "Autenticação",
+          "path": "/docs/api/autenticacao"
+        },
+        {
+          "title": "Webhooks",
+          "path": "/docs/api/webhooks"
+        },
+        {
+          "title": "Rate Limiting",
+          "path": "/docs/api/rate-limiting"
+        }
+      ]
+    },
+    {
+      "title": "Componentes",
+      "icon": "Box",
+      "items": [
+        {
+          "title": "Buttons",
+          "path": "/docs/componentes/buttons"
+        },
+        {
+          "title": "Forms",
+          "path": "/docs/componentes/forms"
+        },
+        {
+          "title": "Tables",
+          "path": "/docs/componentes/tables"
+        },
+        {
+          "title": "Modals",
+          "path": "/docs/componentes/modals"
+        }
+      ]
+    },
+    {
+      "title": "Exemplos",
+      "icon": "Lightbulb",
+      "items": [
+        {
+          "title": "Aplicação React",
+          "path": "/docs/exemplos/react"
+        },
+        {
+          "title": "Integração REST",
+          "path": "/docs/exemplos/rest"
+        },
+        {
+          "title": "Webhooks",
+          "path": "/docs/exemplos/webhooks"
+        }
+      ]
+    },
+    {
+      "title": "FAQ",
+      "path": "/docs/faq",
+      "icon": "HelpCircle"
+    }
+  ],
+  "footer": {
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/sigma-ui" },
+      { "label": "Discord", "url": "https://discord.gg/sigma-ui" },
+      { "label": "Twitter", "url": "https://twitter.com/sigma-ui" }
+    ],
+    "copyright": "© 2026 Sigma UI. MIT License."
+  }
+}

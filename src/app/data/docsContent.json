@@ -1,0 +1,251 @@
+{
+  "introducao": {
+    "title": "Introdução ao Sigma UI",
+    "description": "Bem-vindo à documentação oficial do Sigma UI",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Sigma UI é uma plataforma completa para desenvolvimento de aplicações web modernas. Esta documentação irá guiá-lo através de todos os recursos e funcionalidades disponíveis."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "O que é o Sigma UI?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sigma UI é um framework full-stack que combina as melhores práticas de desenvolvimento frontend e backend em uma solução integrada. Ele oferece:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Componentes React pré-construídos e customizáveis",
+          "API REST completa com autenticação integrada",
+          "Sistema de webhooks para integrações",
+          "Deploy simplificado e escalável",
+          "Documentação completa e exemplos práticos"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Principais Recursos"
+      },
+      {
+        "type": "card-grid",
+        "cards": [
+          {
+            "icon": "Zap",
+            "title": "Performance",
+            "description": "Otimizado para velocidade com SSR, code splitting e lazy loading automático."
+          },
+          {
+            "icon": "Shield",
+            "title": "Segurança",
+            "description": "Autenticação JWT, CSRF protection e sanitização de dados por padrão."
+          },
+          {
+            "icon": "Puzzle",
+            "title": "Modular",
+            "description": "Arquitetura baseada em plugins permite customização total."
+          },
+          {
+            "icon": "Globe",
+            "title": "I18n",
+            "description": "Suporte nativo para internacionalização e múltiplos idiomas."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Requisitos do Sistema"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "Node.js >= 18.0.0\nnpm >= 9.0.0 ou yarn >= 1.22.0\nGit >= 2.0.0"
+      },
+      {
+        "type": "alert",
+        "variant": "info",
+        "title": "Nota",
+        "text": "Recomendamos usar a versão LTS mais recente do Node.js para melhor compatibilidade."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Próximos Passos"
+      },
+      {
+        "type": "paragraph",
+        "text": "Agora que você conhece o básico, siga para o guia de Getting Started para criar seu primeiro projeto com Sigma UI."
+      },
+      {
+        "type": "link-cards",
+        "cards": [
+          {
+            "title": "Getting Started",
+            "description": "Crie seu primeiro projeto em minutos",
+            "link": "/docs/getting-started",
+            "icon": "ArrowRight"
+          },
+          {
+            "title": "Instalação",
+            "description": "Guia completo de instalação e configuração",
+            "link": "/docs/guias/instalacao",
+            "icon": "Download"
+          }
+        ]
+      }
+    ]
+  },
+  "getting-started": {
+    "title": "Getting Started",
+    "description": "Comece a usar o Sigma UI em poucos minutos",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Este guia irá ajudá-lo a criar e executar seu primeiro projeto Sigma UI em menos de 5 minutos."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "1. Instalação"
+      },
+      {
+        "type": "paragraph",
+        "text": "Primeiro, instale o CLI do Sigma UI globalmente:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm install -g @bold/cli"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "2. Criar Novo Projeto"
+      },
+      {
+        "type": "paragraph",
+        "text": "Use o CLI para criar um novo projeto:"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "bold create meu-projeto\ncd meu-projeto"
+      },
+      {
+        "type": "paragraph",
+        "text": "O CLI irá perguntar algumas questões sobre seu projeto:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Nome do projeto",
+          "Template (React, Vue, ou Vanilla)",
+          "Incluir autenticação? (sim/não)",
+          "Banco de dados (PostgreSQL, MongoDB, MySQL)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "3. Instalar Dependências"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm install"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "4. Executar em Desenvolvimento"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "npm run dev"
+      },
+      {
+        "type": "paragraph",
+        "text": "Seu projeto estará rodando em http://localhost:3000"
+      },
+      {
+        "type": "alert",
+        "variant": "success",
+        "title": "Parabéns!",
+        "text": "Você criou seu primeiro projeto Sigma UI. Agora explore a documentação para aprender mais sobre os recursos disponíveis."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Estrutura do Projeto"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "code": "meu-projeto/\n├── src/\n│   ├── components/     # Componentes React\n│   ├── pages/          # Páginas da aplicação\n│   ├── api/            # Rotas da API\n│   ├── lib/            # Utilitários\n│   └── styles/         # Estilos globais\n├── public/             # Arquivos estáticos\n├── config/             # Configurações\n└── package.json"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Próximos Passos"
+      },
+      {
+        "type": "link-cards",
+        "cards": [
+          {
+            "title": "Configuração",
+            "description": "Aprenda a configurar seu projeto",
+            "link": "/docs/guias/configuracao",
+            "icon": "Settings"
+          },
+          {
+            "title": "Componentes",
+            "description": "Explore os componentes disponíveis",
+            "link": "/docs/componentes/buttons",
+            "icon": "Box"
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "description": "Respostas para as dúvidas mais comuns",
+    "content": [
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "O Sigma UI é gratuito?",
+            "answer": "Sim! Sigma UI é um projeto open-source com licença MIT. Você pode usá-lo gratuitamente em projetos pessoais e comerciais."
+          },
+          {
+            "question": "Qual a diferença entre Sigma UI e Next.js?",
+            "answer": "Sigma UI é construído em cima do Next.js, mas adiciona uma camada de abstração com componentes pré-construídos, API integrada e configurações otimizadas. É ideal para quem quer começar rapidamente sem configurar tudo do zero."
+          },
+          {
+            "question": "Posso usar TypeScript?",
+            "answer": "Sim! TypeScript é suportado nativamente e é a opção padrão em novos projetos. Todos os componentes incluem definições de tipos completas."
+          },
+          {
+            "question": "Como faço deploy?",
+            "answer": "Sigma UI funciona perfeitamente com Vercel, Netlify, AWS, e outras plataformas. Veja nosso guia de deploy para instruções detalhadas."
+          },
+          {
+            "question": "Preciso conhecer React?",
+            "answer": "Conhecimento básico de React é recomendado. Se você é novo em React, sugerimos fazer o tutorial oficial primeiro."
+          },
+          {
+            "question": "Há suporte comercial disponível?",
+            "answer": "Sim! Oferecemos suporte comercial, consultoria e treinamento. Entre em contato através do nosso site."
+          }
+        ]
+      }
+    ]
+  }
+}
