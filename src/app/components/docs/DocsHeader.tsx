@@ -2,11 +2,14 @@ import { Link } from 'react-router';
 import { Search, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import docsConfig from '../../data/docsConfig.json';
+import { SearchModal } from './SearchModal';
 
 export function DocsHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
+    <>
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -24,7 +27,10 @@ export function DocsHeader() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             {/* Search */}
-            <button className="flex items-center gap-2 px-4 py-2 w-96 bg-gray-100 rounded-lg text-gray-600 hover:bg-gray-200 transition-colors">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 w-96 bg-gray-100 rounded-lg text-gray-600 hover:bg-gray-200 transition-colors"
+            >
               <Search size={18} />
               <span className="text-sm">Buscar...</span>
             </button>
@@ -53,7 +59,10 @@ export function DocsHeader() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="space-y-3">
-              <button className="w-full flex items-center gap-2 px-8 py-2 bg-gray-100 rounded-lg text-gray-600">
+              <button
+                onClick={() => { setIsSearchOpen(true); setIsMobileMenuOpen(false); }}
+                className="w-full flex items-center gap-2 px-8 py-2 bg-gray-100 rounded-lg text-gray-600"
+              >
                 <Search size={18} />
                 <span className="text-sm">Buscar documentação...</span>
               </button>
@@ -67,5 +76,8 @@ export function DocsHeader() {
         )}
       </div>
     </header>
+
+    {isSearchOpen && <SearchModal onClose={() => setIsSearchOpen(false)} />}
+    </>
   );
 }
