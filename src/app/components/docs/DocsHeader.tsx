@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Search, Menu, X } from 'lucide-react';
+import { MagnifyingGlassIcon as Search, ListIcon as Menu, XIcon as X } from '@phosphor-icons/react';
 import { useState } from 'react';
 import docsConfig from '../../data/docsConfig.json';
 import { SearchModal } from './SearchModal';

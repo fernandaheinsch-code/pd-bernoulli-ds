@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { BookOpen, Rocket, Code, Lightbulb, ArrowRight } from 'lucide-react';
+import { BookOpenIcon, RocketIcon, CodeIcon, LightbulbIcon, ArrowRightIcon } from '@phosphor-icons/react';
 import docsConfig from '../data/docsConfig.json';
 
 export default function HomePage() {

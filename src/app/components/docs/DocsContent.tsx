@@ -132,13 +132,26 @@ export function DocsContent({ title, description, content }: DocsContentProps) {
           <div key={index} className="grid md:grid-cols-2 gap-6 mb-8">
             {block.cards?.map((card, i) => {
               const Icon = (LucideIcons as any)[card.icon] || LucideIcons.Circle;
-              return (
-                <div key={i} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+              const inner = (
+                <>
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="text-blue-600" size={24} />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
                   <p className="text-gray-600 text-sm">{card.description}</p>
+                </>
+              );
+              return card.link ? (
+                <Link
+                  key={i}
+                  to={card.link}
+                  className="border border-gray-200 rounded-lg p-6 hover:border-blue-600 hover:shadow-md transition-all block"
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <div key={i} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                  {inner}
                 </div>
               );
             })}

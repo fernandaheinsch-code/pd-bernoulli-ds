@@ -18,7 +18,8 @@
           {
             "icon": "Palette",
             "title": "Tokens de Cor",
-            "description": "Cores dos temas Multitude, Bernoulli, Shadcn e paleta Tailwind completa."
+            "description": "Cores dos temas Multitude, Bernoulli, Shadcn e paleta Tailwind completa.",
+            "link": "/docs/tokens/cores"
           },
           {
             "icon": "Type",

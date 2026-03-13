@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router';
-import { Search, X, ArrowRight } from 'lucide-react';
+import { MagnifyingGlassIcon as Search, XIcon as X, ArrowRightIcon as ArrowRight } from '@phosphor-icons/react';
 import docsConfig from '../../data/docsConfig.json';
 
 // ─── índice de busca ───────────────────────────────────────────────────────────

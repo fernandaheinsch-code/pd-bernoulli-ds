@@ -44,9 +44,9 @@ export const router = createBrowserRouter([
         element: <GenericDocPage /> 
       },
       // Rotas genéricas para componentes
-      { 
-        path: 'componentes/:page', 
-        element: <GenericDocPage /> 
+      {
+        path: 'componentes/:page',
+        element: <GenericDocPage />
       },
       // Rotas genéricas para exemplos
       {

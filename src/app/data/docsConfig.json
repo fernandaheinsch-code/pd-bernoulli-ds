@@ -20,7 +20,7 @@
     },
     {
       "title": "Guias",
-      "icon": "BookMarked",
+      "icon": "Bookmarks",
       "items": [
         {
           "title": "Instalação",
@@ -67,7 +67,11 @@
       "icon": "Box",
       "items": [
         {
-          "title": "Buttons",
+          "title": "Avatar",
+          "path": "/docs/componentes/avatar"
+        },
+        {
+          "title": "Button",
           "path": "/docs/componentes/buttons"
         },
         {
