@@ -1,17 +1,16 @@
-# BOLD Documentation Site
+# Bernoulli Design System Documentation
 
-Site de documentação técnica completo com arquitetura modular e conteúdo totalmente personalizável via JSON.
+Documentação técnica completa com arquitetura modular e conteúdo totalmente personalizável via JSON.
 
 ## 🎯 Características Principais
 
-- **📚 Estrutura de Documentação Profissional**: Sidebar navegável, table of contents, breadcrumbs
+- **📚 Estrutura de Documentação Profissional**: Sidebar, table of contents, breadcrumbs
 - **✏️ Conteúdo Editável via JSON**: Todo o conteúdo em arquivos JSON, sem mexer no código
 - **🎨 Design Moderno**: Interface limpa e profissional focada em legibilidade
 - **📱 Totalmente Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
 - **🔍 Navegação Intuitiva**: Sidebar expansível com seções e subseções
 - **💻 Syntax Highlighting**: Blocos de código com destaque de sintaxe
 - **📋 Componentes de Conteúdo**: Alerts, cards, listas, código, FAQ e mais
-- **⚡ Performance Otimizada**: React + Vite para velocidade máxima
 
 ## 🏗️ Estrutura do Projeto
 
